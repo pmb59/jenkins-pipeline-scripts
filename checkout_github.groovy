@@ -1,4 +1,4 @@
-node('lsf-codon-submitter') {
+node('lsf-submitter') {
 
   stage('git version') {
     sh 'git --version'
