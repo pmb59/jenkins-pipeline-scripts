@@ -1,4 +1,4 @@
-node('lsf-submitter') {
+nnode('lsf-submitter') {
 
   stage('git version') {
     sh 'git --version'
