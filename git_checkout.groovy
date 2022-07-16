@@ -31,8 +31,8 @@ node('lsf-submitter') {
       ])
 
     sh '''#!/bin/bash
-    echo $WORKSPACE
-    mkdir subdir_repo
+      echo $WORKSPACE
+      mkdir subdir_repo
     '''
   }
 
@@ -57,6 +57,5 @@ node('lsf-submitter') {
           ]
         ])
     }
-
   }
 }
