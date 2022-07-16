@@ -7,7 +7,7 @@ jobs:
       - checkout
 
       - run: |
-          npm-groovy-lint --files "*.groovy"
+          npm-groovy-lint --fix --format --files "*.groovy"
 
 workflows:
   version: 2
