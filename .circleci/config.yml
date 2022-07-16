@@ -7,10 +7,10 @@ jobs:
       - checkout
 
       - run: |
-          npm-groovy-lint --fix --path "." --files "*.groovy"
+          npm-groovy-lint --fix --failon "error" --path "." --files "*.groovy"
           
       - run: |
-          npm-groovy-lint --format --path "." --files "*.groovy"
+          npm-groovy-lint --format --failon "error" --path "." --files "*.groovy"
 
 workflows:
   version: 2
