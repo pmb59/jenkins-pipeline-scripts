@@ -1,0 +1,16 @@
+version: 2.1
+jobs:
+  lint:
+    docker:
+      - image: nvuillam/npm-groovy-lint
+    steps:
+      - checkout
+
+      - run: |
+          npm-groovy-lint --files "*.groovy"
+
+workflows:
+  version: 2
+  "lint":
+    jobs:
+       - lint
