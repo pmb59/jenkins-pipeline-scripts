@@ -1,6 +1,6 @@
 node('lsf-submitter') {
 
-stage('git version') {
+  stage('git version') {
     sh 'git --version'
   }
 
